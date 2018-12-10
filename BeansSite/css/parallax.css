@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/* フォントの設定*/
+article h2{
+	font-size: 3.6em;
+	color: #86b12e;
+	line-height: 1em;
+	margin: 25px 0;
+}
+
+article p {
+	font-size: 1.6em;
+	line-height: 2em;
+	margin: 25px 0;
+}
+
+/* sectionのbox設定*/
+.content {
+	height: 600px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+/* sectionの背景の設定 */
+#first {
+	background: url(../images/bg-parallax01.jpg)  no-repeat fixed;
+}
+
+#second {
+	background: url(../images/bg-parallax02.jpg)  no-repeat fixed;
+}
+
+#third {
+	background: url(../images/bg-parallax03.jpg)  no-repeat fixed;
+}
+
+#theend {
+	background: url(../images/bg-parallax04.jpg)  no-repeat fixed;
+}
+
+/* section the end(最後のsection) */
+#theend h2 {
+	color: white;
+	font-size: 4em;
+	left: 10%;
+	position: absolute;
+	text-shadow: 0 0 16px rgba(140, 123, 96, 0.8);
+	top: 200px;
+	width: 300px;
+}
+#theend p {
+	color: white;
+	font-size: 2em;
+	left: 10%;
+	position: absolute;
+	text-shadow: 0 0 16px rgba(140, 123, 96, 0.8);
+	top: 300px;
+	width: 300px;
+}
+
+
+/* テキストエリア */
+ .text_area {
+	background: rgba(255, 255, 255, 0.9);
+	border: 1px solid rgba(150, 150, 150, 0.1);
+	box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.4);
+	padding: 20px 80px;
+	margin:20px;
+	position: absolute;
+	top: 100px;
+	width: auto;
+}
+
+
+
+

@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+/* グローバル設定 ********************/
+html {
+	font-size: 62.5%; /* 10px */
+}
+body {
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "ＭＳ 明朝", serif;
+	background: #303030;
+	color: #ccc;
+}
+h1 {
+	font-weight: normal;
+	font-size: 3.6rem;
+}
+h2 {
+	font-weight: normal;
+	font-size: 2.4rem;
+}
+h3 {
+	font-weight: normal;
+	font-size: 1.6rem;
+}
+p {
+	font-size: 1.4rem;
+	line-height: 1.75;
+}
+
+/* ボタンのアクティブ設定 */
+.active {
+	background-color: rgba(0,0,0,0.6);
+}
+
+/* wrapperの設定（大枠・ナビゲーションのセンター設定）*/
+.wrap {
+	width: 960px;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* ナビゲーションの設定 ********************/
+.navigation {
+	position: absolute;
+	top: 462px;
+	height: 50px;
+	z-index: 11;
+	width: 960px;
+	background-color: rgba(0,0,0,0.3);
+	border-style: solid 1 #fff;
+}
+.navigation .inner {
+	padding: 0;
+	font-weight: 600;
+}
+.navigation_btn {
+	display: block;
+	float: left;
+	width: 10%;
+	height: 50px;
+	padding: 15px 10px 0 10px;
+	text-decoration: none;
+	font-size: 1.4rem;
+	letter-spacing: 0.2rem;
+	text-align: center;
+	color: #fff;
+}
+.end {
+	margin: 0;
+}
+
+/* 各セクションの設定 ********************/
+.section {
+	/*width: 960px;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;*/
+}
+.inner {
+	/*width: 960px;*/
+	margin: 0 auto;
+	position: relative;
+	min-height: 50px;
+	padding: 10px;
+}
+/* ヘッダー */
+.header {
+	height: 600px;
+}
+.header .inner {
+	padding: 0;
+}
+.title {
+	position: absolute;
+	padding: 25px;
+	z-index: 11;
+}
+/* ニュース */
+.news {
+	min-height: 500px;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	background: #504f4f;
+}
+.update {
+	width: 780px; /* 新着情報エリアの幅 */
+	margin: auto;
+	font-size: 1.4rem;
+	line-height: 1.75;
+}
+/* 見出し */
+.update h3 {
+	margin: 0 0 5px; /* 見出しのマージン（上、左右、下） */
+}
+/* 日付エリア */
+.update dt {
+	width: 150px; /* 日付エリアの幅 */
+	float: left;
+	padding: 7px 0 6px 3px; /* 日付エリアのパディング（上右下左） */
+}
+/* 文エリア */
+.update dd {
+	margin: 0;
+	padding: 7px 3px 6px 6.6em; /* 本文エリアのパディング（上右下左） */
+	border-bottom: 1px #c0c0c0 dotted; /* 本文エリア下境界線 */
+}
+/* メニュー */
+.menu {
+	background: #3f3f3f;
+	overflow: hidden;
+}
+.menu ul {
+	width:960px;
+	margin: auto;
+}
+.menu li {
+	float: left;
+	width: 33.33333333333333%;
+	height: 400px;
+	list-style: none;
+}
+.menu li h3 {
+	width: 300px;
+	padding: 10px 0 10px 0;
+}
+.menu li p {
+	width: 300px;
+}
+.menu img {
+	width: 300px;
+	height: auto;
+}
+/* アドレス */
+.address {
+	min-height: 800px;
+	background: #504f4f;
+}
+.map {
+	width: 780px;
+	margin: auto;
+}
+.map h2 {
+	margin: 10px 0;
+}
+
+/* メインイメージスライド ********************/
+#main_image img {
+	float: left;
+	z-index: 7;
+}
+#main_image {
+	overflow: hidden;
+}
+#slideshow {
+	position: absolute;
+	height: 630px;
+	top: 0;
+	left: 0;
+}
+#slideshow IMG {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 8;
+	opacity: 0.0;
+}
+#slideshow IMG.active {
+	z-index: 10;
+	opacity: 1.0;
+}
+#slideshow IMG.last-active {
+	z-index: 9;
+}
